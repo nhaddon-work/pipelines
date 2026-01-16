@@ -1,0 +1,6 @@
+include:
+- project: ${AIRFLOW_PIPELINE_CICD_REPO}
+  file: business-intelligence.yml
+
+variables:
+  IMAGE_NAME: pipelines/snowflake/inbound_raw/miers

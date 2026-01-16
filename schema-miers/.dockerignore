@@ -1,0 +1,35 @@
+# IDE
+.vscode
+.idea/
+
+# Cache
+*__pycache__/
+.cache/
+*.pyc
+.DS_Store
+
+# Test files
+src/tests/
+.coverage
+.pytest_cache/
+htmlcov/
+
+# Virtualenv
+local/
+venv/
+
+# core/ ignored files and directories
+core/notebook/*
+core/creds/*
+*.env
+
+# notebooks
+**/*.ipynb
+
+# Transform dir:
+core/transform/target/
+core/transform/dbt_packages/
+core/transform/logs/
+core/dbt_packages
+core/target
+core/logs
