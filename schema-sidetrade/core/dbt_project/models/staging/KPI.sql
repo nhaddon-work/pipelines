@@ -1,0 +1,2 @@
+SELECT *
+FROM {{ env_var('SNOWFLAKE_DATABASE') }}.{{ env_var('SNOWFLAKE_SCHEMA') }}.KPI

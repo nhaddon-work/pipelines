@@ -1,0 +1,33 @@
+# IDE
+.vscode
+.idea/
+
+# Cache
+*__pycache__/
+.cache/
+*.pyc
+.DS_Store
+
+# Test files
+.coverage
+.pytest_cache/
+htmlcov/
+src/tests/load/*.csv
+*.ipynb
+
+# Virtualenv
+local/
+venv/
+
+# Credentials
+core/creds/
+*.env
+
+# DBT metadata:
+core/transform/target/
+core/transform/dbt_packages/
+core/transform/logs/
+core/dbt_packages
+core/target
+core/logs
+*.log

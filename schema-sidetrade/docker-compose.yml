@@ -1,0 +1,16 @@
+services:
+  pipeline:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        pypi_index: ${PYPI_INDEX}
+    volumes:
+      # For passing AWS credentials into the container
+      # Make sure to change destination homedir if you're using a different base image
+      - ~/.aws:/home/pipeuser/.aws
+    entrypoint: /bin/bash
+    env_file:
+      - .env
+    stdin_open: true
+    tty: true
