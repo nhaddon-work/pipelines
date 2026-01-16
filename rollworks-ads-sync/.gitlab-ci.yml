@@ -1,0 +1,6 @@
+include:
+- project: ${AIRFLOW_PIPELINE_CICD_REPO}
+  file: business-intelligence-tag.yml
+
+variables:
+  IMAGE_NAME: pipelines/snowflake/inbound_raw/rollworks
